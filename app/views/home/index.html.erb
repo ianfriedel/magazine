@@ -1,0 +1,22 @@
+<div class="page_wrapper">
+  <%= render 'navbar' %>
+  <div class="row no-gutters">
+    <% @first.each do |post| %>
+        <div class="col-md-9">
+          <%= image_tag post.image, class: "img-responsive"%></br>
+          <%= post.title %></br>
+          <%= post.author %></br>
+          <%= post.excerpt %></br>
+          <%= post.date %></br>
+        </div>
+        <div class="col-md-3 no-gutters">
+          <%= image_tag post.image, class: "img-responsive"%></br>
+          <%= post.title %></br>
+          <%= post.author %></br>
+          <%= post.excerpt %></br>
+          <%= post.date %></br>
+        </div>
+    <% end %>
+  </div>
+
+</div>
